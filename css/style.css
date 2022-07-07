@@ -4,22 +4,41 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Montserrat Alternates', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
-body {
-  background-color: rgb(126, 210, 181);
+:root {
+  --primary-color: rgb(19, 148, 103);
+  --bg-secondary-color: rgb(195, 239, 224);
+}
+.hero {
+  background-color: var(--bg-secondary-color);
+  text-align: center;
+  padding: 160px 20px;
+  font-family: "Roboto", sans-serif;
 }
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Meddon", cursive;
   font-weight: 700;
-  font-size: 72px;
+  font-size: 80px;
+  color: var(--primary-color);
+  padding: 35px 0;
+  margin: 10px auto;
+}
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 
-p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
+h3 {
+  font-weight: 600;
+  opacity: 0.7;
+  font-size: 20px;
+  line-height: 2;
 }
 
-.fa-instagram {
-  color: brown;
-  font-size: 40px;
+.btn-hero-page {
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  padding: 12px 18px;
 }
