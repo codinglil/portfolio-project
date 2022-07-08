@@ -141,6 +141,7 @@ h3.job-overview {
   h3 {
     font-size: 16px;
   }
+
   .hero {
     padding: 80px 25px 60px;
   }
@@ -158,10 +159,10 @@ h3.job-overview {
     text-align: center;
   }
   .welcome-img {
-    width: 30px;
+    width: 26px;
   }
   .welcome-to {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 
