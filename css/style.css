@@ -7,14 +7,38 @@ font-family: 'Roboto', sans-serif; */
 :root {
   --primary-color: rgb(19, 148, 103);
   --bg-secondary-color: rgba(216, 240, 232, 0.9);
+  --third-color: #f0ac46;
 }
+/* containers */
 .container-fluid {
   display: flex;
   flex-wrap: inherit;
   align-items: center;
   justify-content: space-between;
 }
+.container {
+  margin: 30px auto;
+}
+.container-projects {
+  padding: 100px 20px 80px;
+}
+.hero {
+  background-color: var(--bg-secondary-color);
+  text-align: center;
+  padding: 100px 20px 75px;
+  font-family: "Montserrat", sans-serif;
+}
+.about-section {
+  text-align: center;
+  padding: 100px 20px 75px;
+  font-family: "Montserrat", sans-serif;
+}
+.container-poems-imgs {
+  text-align: center;
+  background: var(--bg-secondary-color);
+}
 
+/* navbar */
 .bg-color {
   background-color: var(--primary-color);
 }
@@ -30,12 +54,6 @@ font-family: 'Roboto', sans-serif; */
   font-family: "Montserrat", sans-serif;
 }
 
-.hero {
-  background-color: var(--bg-secondary-color);
-  text-align: center;
-  padding: 100px 20px 75px;
-  font-family: "Montserrat", sans-serif;
-}
 h1 {
   font-family: "Meddon", cursive;
   font-weight: 700;
@@ -43,6 +61,11 @@ h1 {
   color: var(--primary-color);
   padding: 35px 0;
   margin: 10px auto;
+}
+h1.about-me-name {
+  font-size: 58px;
+  padding-top: 0;
+  color: var(--third-color);
 }
 h2 {
   font-weight: 600;
@@ -52,7 +75,27 @@ h2 {
 .hero h2 {
   margin-top: 40px;
 }
-
+.about-section h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+.welcome-to-my-poems h2 {
+  padding-bottom: 5px;
+}
+.about-insta-visit {
+  font-family: "Goldman", cursive;
+  font-size: 16px;
+  opacity: 0.7;
+  margin-bottom: 0;
+  line-height: 2;
+}
+.poem-account {
+  font-family: "Montserrat", sans-serif;
+  color: var(--third-color);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
 h3 {
   font-weight: 600;
   opacity: 0.7;
@@ -60,13 +103,61 @@ h3 {
   line-height: 2;
   font-family: "Montserrat", sans-serif;
 }
+
 h3.job-overview {
   margin: 0 auto;
 }
+p.about-me-details {
+  font-weight: 400;
+  opacity: 0.6;
+  font-size: 16px;
+  line-height: 2;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+}
 
-.books {
+.welcome-to {
+  text-align: center;
+  padding: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  line-height: 1;
+  opacity: 0.7;
+}
+
+.project-description {
+  opacity: 0.7;
+  font-weight: 500;
+  line-height: 2;
+}
+/* images */
+img.books {
   width: 20%;
 }
+.hero-img {
+  width: 90%;
+  border-radius: 5px;
+  padding: 30px;
+  background: var(--bg-secondary-color);
+}
+.welcome-img {
+  width: 50px;
+}
+.my-img {
+  width: 75%;
+  border-radius: 5px;
+  padding: 30px;
+  background: var(--bg-secondary-color);
+}
+.poem {
+  width: 70%;
+  height: 85%;
+  padding: 20px;
+
+  background: #f9bc60;
+}
+
+/* buttons */
 .btn-hero-page {
   background-color: var(--primary-color);
   border-radius: 4px;
@@ -79,34 +170,6 @@ h3.job-overview {
   background-color: white;
   color: var(--primary-color);
   border: 2px solid var(--primary-color);
-}
-
-.welcome-to {
-  text-align: center;
-  padding: 25px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 40px;
-  line-height: 1;
-  opacity: 0.7;
-}
-.welcome-img {
-  width: 50px;
-}
-.container {
-  margin: 30px auto;
-}
-
-.project-description {
-  opacity: 0.7;
-  font-weight: 500;
-  line-height: 2;
-}
-.hero-img {
-  width: 90%;
-
-  border-radius: 5px;
-  padding: 18px;
-  background: var(--bg-secondary-color);
 }
 .btn-go-to-project {
   border-radius: 4px;
@@ -122,6 +185,7 @@ h3.job-overview {
   background-color: var(--bg-secondary-color);
   color: var(--primary-color);
 }
+/* footer */
 .contacts {
   display: flex;
   justify-content: center;
@@ -133,11 +197,24 @@ h3.job-overview {
   font-size: 25px;
   font-weight: 600;
 }
+.shecodes-link {
+  color: var(--primary-color);
+}
 
 @media (max-width: 845px) {
   h1 {
     font-size: 50px;
   }
+  .about-section h2 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  h1.about-me-name {
+    font-size: 34px;
+    padding-top: 0;
+    line-height: 1.5;
+  }
+
   h2 {
     font-size: 22px;
     text-align: center;
@@ -148,7 +225,8 @@ h3.job-overview {
     font-size: 16px;
   }
 
-  .hero {
+  .hero,
+  .about-section {
     padding: 80px 25px 60px;
   }
   .btn-hero-page {
@@ -156,7 +234,8 @@ h3.job-overview {
     font-size: 14px;
   }
 
-  .project-description {
+  .project-description,
+  .about-me-details {
     padding: 20px;
     text-align: justify;
     line-height: 1.5;
@@ -170,8 +249,7 @@ h3.job-overview {
   .welcome-to {
     font-size: 24px;
   }
-}
-
-.container-projects {
-  padding: 100px 20px 80px;
+  .about-insta-visit {
+    font-size: 12px;
+  }
 }
