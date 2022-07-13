@@ -39,7 +39,19 @@ font-family: 'Roboto', sans-serif; */
   text-align: center;
   background: var(--bg-secondary-color);
 }
-
+.contact-container {
+  text-align: center;
+  padding: 40px;
+}
+.contact-me-card {
+  display: block;
+  margin: 0 auto;
+  border-radius: 7px;
+  background: var(--bg-secondary-color);
+  width: 300px;
+  border: 3px solid rgba(19, 148, 103, 0.2);
+  box-shadow: 5px 5px 9px rgba(19, 148, 103, 0.3);
+}
 /* navbar */
 .bg-color {
   background-color: var(--primary-color);
@@ -55,6 +67,9 @@ font-family: 'Roboto', sans-serif; */
   color: var(--bg-secondary-color) !important;
   font-family: "Montserrat", sans-serif;
 }
+.nav-link:hover {
+  color: var(--third-color) !important;
+}
 
 h1 {
   font-family: "Meddon", cursive;
@@ -68,6 +83,11 @@ h1.about-me-name {
   font-size: 58px;
   padding-top: 0;
   color: var(--third-color);
+}
+h1.contact-me-title {
+  font-size: 48px;
+  padding-bottom: 0;
+  margin-bottom: -40px;
 }
 h2 {
   font-weight: 600;
@@ -114,6 +134,11 @@ h3.tool-section {
 h3.job-overview {
   margin: 0 auto;
 }
+h3.contact-me-way {
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
 p.about-me-details {
   font-weight: 400;
   opacity: 0.6;
@@ -122,6 +147,10 @@ p.about-me-details {
   font-family: "Montserrat", sans-serif;
   text-align: justify;
   margin-bottom: 0;
+}
+p.contact-p {
+  font-family: "Goldman", cursive;
+  color: var(--third-color);
 }
 
 .welcome-to {
@@ -172,6 +201,11 @@ img.books {
   padding: 20px;
 
   background: #f9bc60;
+}
+.contact-page-img {
+  position: relative;
+  bottom: -73px;
+  left: -26px;
 }
 
 /* buttons */
@@ -283,5 +317,9 @@ img.books {
     font-size: 12px;
   }
   .tools-used {
+  }
+  h1.contact-me-title {
+    line-height: 1.5;
+    font-size: 34px;
   }
 }
