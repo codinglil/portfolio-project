@@ -41,7 +41,7 @@ font-family: 'Roboto', sans-serif; */
 }
 .contact-container {
   text-align: center;
-  padding: 40px;
+  padding: 35px;
 }
 .contact-me-card {
   display: block;
@@ -140,7 +140,7 @@ h3.contact-me-way {
   margin-top: 5px;
 }
 p.about-me-details {
-  font-weight: 400;
+  font-weight: 300;
   opacity: 0.6;
   font-size: 16px;
   line-height: 2;
@@ -293,6 +293,9 @@ img.books {
   .about-section {
     padding: 80px 25px 60px;
   }
+  p.about-me-details {
+    font-size: 14px;
+  }
   .btn-hero-page {
     padding: 10px 15px;
     font-size: 14px;
@@ -316,8 +319,7 @@ img.books {
   .about-insta-visit {
     font-size: 12px;
   }
-  .tools-used {
-  }
+
   h1.contact-me-title {
     line-height: 1.5;
     font-size: 34px;
