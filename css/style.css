@@ -17,7 +17,7 @@ font-family: 'Roboto', sans-serif; */
   justify-content: space-between;
 }
 .container {
-  margin: 30px auto;
+  margin: 25px auto;
 }
 .container-projects {
   padding: 100px 0 20px;
@@ -33,6 +33,7 @@ font-family: 'Roboto', sans-serif; */
   text-align: center;
   padding: 100px 30px 75px;
   margin-top: 20px;
+
   font-family: "Montserrat", sans-serif;
 }
 .container-poems-imgs {
@@ -42,6 +43,7 @@ font-family: 'Roboto', sans-serif; */
 .contact-container {
   text-align: center;
   padding: 35px;
+  margin-bottom: 15px;
 }
 .contact-me-card {
   display: block;
@@ -88,6 +90,7 @@ h1.contact-me-title {
   font-size: 48px;
   padding-bottom: 0;
   margin-bottom: -40px;
+  padding-top: 30px;
 }
 h2 {
   font-weight: 600;
@@ -142,7 +145,7 @@ h3.contact-me-way {
 p.about-me-details {
   font-weight: 300;
   opacity: 0.6;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 2;
   font-family: "Montserrat", sans-serif;
   text-align: justify;
@@ -248,6 +251,10 @@ img.books {
   font-size: 25px;
   font-weight: 600;
 }
+
+.contact:hover {
+  color: var(--third-color);
+}
 /* tool list */
 .tools-used {
   display: flexbox;
@@ -261,8 +268,16 @@ img.books {
   flex: 1;
 }
 
-.shecodes-link {
+.shecodes-link,
+.source-link {
   color: var(--primary-color);
+  font-weight: 700;
+}
+.source-line {
+  font-family: monospace;
+  text-align: center;
+  opacity: 0.7;
+  font-size: 14px;
 }
 
 @media (max-width: 845px) {
