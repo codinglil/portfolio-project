@@ -171,6 +171,12 @@ p.contact-p {
   font-weight: 500;
   line-height: 2;
 }
+.source-line {
+  font-family: monospace;
+  text-align: center;
+  opacity: 0.7;
+  font-size: 14px;
+}
 /* images */
 img.books {
   width: 18%;
@@ -273,12 +279,6 @@ img.books {
   color: var(--primary-color);
   font-weight: 700;
 }
-.source-line {
-  font-family: monospace;
-  text-align: center;
-  opacity: 0.7;
-  font-size: 14px;
-}
 
 @media (max-width: 845px) {
   h1 {
@@ -338,5 +338,8 @@ img.books {
   h1.contact-me-title {
     line-height: 1.5;
     font-size: 34px;
+  }
+  .source-line {
+    font-size: 12px;
   }
 }
