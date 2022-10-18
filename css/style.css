@@ -9,6 +9,7 @@ font-family: 'Roboto', sans-serif; */
   --bg-secondary-color: rgba(216, 240, 232, 0.9);
   --third-color: #f0ac46;
 }
+
 /* containers */
 .container-fluid {
   display: flex;
@@ -90,7 +91,7 @@ h1.contact-me-title {
   font-size: 48px;
   padding-bottom: 0;
   margin-bottom: -40px;
-  padding-top: 30px;
+  padding-top: 25px;
 }
 h2 {
   font-weight: 600;
@@ -179,10 +180,10 @@ p.contact-p {
 }
 /* images */
 img.books {
-  width: 18%;
+  width: 30%;
   display: block;
   margin: 0 auto;
-  margin-bottom: 0x;
+  margin-bottom: 10px;
 }
 .second-img-book {
   width: 10%;
@@ -338,6 +339,7 @@ img.books {
   h1.contact-me-title {
     line-height: 1.5;
     font-size: 34px;
+    margin-top: 35px;
   }
   .source-line {
     font-size: 12px;
